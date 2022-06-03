@@ -43,7 +43,7 @@
             <v-card>
               <v-dialog v-model="DifferentSizeDialog" persistent max-width="600px">
                 <template v-slot:activator="{ on }">
-                  <v-img :src="@/uploads/storeImage/differ.jpg" class="white--text" height="200px" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"></v-img>
+                  <v-img :src="../uploads/storeImage/differ.jpg" class="white--text" height="200px" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"></v-img>
                 </template>
                 <v-container>
                   <v-card>
@@ -53,7 +53,7 @@
                     <v-card-text>
                       <v-col>
                         <v-row>
-                          <v-img :src="@/uploads/storeImages/differ.jpg" class="white--text" height="200px" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"></v-img>
+                          <v-img :src="../uploads/storeImages/differ.jpg" class="white--text" height="200px" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"></v-img>
                 
                         </v-row>
                       </v-col>
