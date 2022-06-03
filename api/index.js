@@ -3,7 +3,6 @@ const app = express()
 const http = require('http').Server(app)
 const io = require('socket.io')(http)
 const cookieParser = require('cookie-parser')
-const uploadRouter = require('./upload/upload_router')
 require('dotenv').config()
 
 // mongoose
@@ -57,7 +56,7 @@ app.use(cookieParser())
 app.use('/user', require('./user/index.js'))
 app.use('/product', require('./product/index.js'))
 app.use('/comment', require('./comment/index.js'))
-app.use('/api/upload', uploadRouter)
+app.use('/api/upload', require('./upload/upload_router'))
 
 module.exports = {
   path: '/api',
